@@ -63,7 +63,7 @@ nav ul li a.btn-primary:hover {
 }
 
 .banner {
-    background-image: url('https://capian.co/assets/images/uploads/blog/ckia8-music-lockdown-1fa0fb8b.jpg'); /* Replace with your own banner image */
+    background-image: url('https://img.collegepravesh.com/2017/03/YMCA-UST-Faridabad.jpg'); /* Replace with your own banner image */
     background-size: cover;
     background-position: center;
     padding: 80px 20px;
@@ -98,7 +98,7 @@ nav ul li a.btn-primary:hover {
 }
 
 .hero {
-    background-image: url('https://img.collegepravesh.com/2017/03/YMCA-UST-Faridabad.jpg');
+    background-image: url('https://media.assettype.com/thequint%2F2024-06%2F832e336a-0b61-49c4-95a6-f192847c6269%2FHero_image___Garima.png?auto=format%2Ccompress&fmt=webp&width=440&w=1200');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -801,40 +801,184 @@ textarea {
         align-items: center;
     }
 }
-/* Registration Section */
+/* Authentication Links */
+.auth-links {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.auth-links .btn-secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-links .btn-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+/* General Styling for Registration Section */
 .register {
     padding: 60px 20px;
-    max-width: 1200px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(135deg, #007bff 30%, #6c757d 100%);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.register-header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e6e6e6;
+}
+
+.auth-links {
+    margin-bottom: 20px;
+}
+
+.auth-links .btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-links .btn-secondary:hover {
+    background-color: #ffffff;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-form-container {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.register-form .form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.register-form .form-group input,
+.register-form .form-group select,
+.register-form .form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-form .form-group input:focus,
+.register-form .form-group select:focus,
+.register-form .form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.register-form button.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-form button.btn-submit:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.3);
+}
+
+.register-form .form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .register {
+        padding: 40px 15px;
+    }
+
+    .register-header h2 {
+        font-size: 2rem;
+    }
+
+    .register-header p {
+        font-size: 1rem;
+    }
+
+    .register-form-container {
+        padding: 30px;
+    }
+
+    .register-form button.btn-submit {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+/* Authentication Section */
+.auth {
+    padding: 60px 20px;
+    max-width: 400px;
     margin: 0 auto;
     text-align: center;
 }
 
-.register-header {
-    margin-bottom: 40px;
-}
-
-.register-header h2 {
-    font-size: 40px;
-    color: #007bff;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.register-header p {
-    font-size: 20px;
-    color: #555;
-}
-
-.register-form-container {
+.auth-container {
     background-color: #fff;
-    padding: 40px 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.register-form {
+.auth h2 {
+    font-size: 32px;
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.auth-form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -853,9 +997,7 @@ textarea {
     margin-bottom: 5px;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.form-group input {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -864,16 +1006,9 @@ textarea {
     transition: border-color 0.3s ease;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-group input:focus {
     border-color: #007bff;
     outline: none;
-}
-
-textarea {
-    min-height: 100px;
-    resize: none;
 }
 
 .btn-submit {
@@ -885,19 +1020,25 @@ textarea {
     font-weight: 500;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
     background-color: #0056b3;
-    transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .register-form-container {
-        padding: 20px 10px;
-    }
+.auth-switch {
+    font-size: 14px;
+    color: #555;
 }
 
+.auth-switch a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
 
