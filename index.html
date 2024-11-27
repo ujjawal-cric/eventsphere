@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventsphere</title>
+    <link rel="stylesheet"href="/static/code2.css"
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">EventSphere</div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('schedule') }}">Schedule</a></li>
+                <li><a href="{{ url_for('gallery') }}">Gallery</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('registration') }}" class="btn-primary">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Welcome to EventSphere!</h2>
+            <p>Join the most exciting event of the year. Let your ideas take flight.</p>
+            <a href="{{ url_for('registration') }}" class="btn-banner">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>EventSphere 2024</h1>
+            <p>The ultimate platform for connecting and celebrating ideas.</p>
+            <div id="countdown"></div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <h3>Event Highlights</h3>
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <h4>Inspiring Talks</h4>
+                <p>Get inspired by industry leaders.</p>
+            </div>
+            <div class="highlight-card">
+                <h4>Networking Opportunities</h4>
+                <p>Meet like-minded professionals.</p>
+            </div>
+            <div class="highlight-card">
+                <h4>Exciting Competitions</h4>
+                <p>Showcase your skills and win!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EventSphere. All Rights Reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    
+</body>
+</html>
+
