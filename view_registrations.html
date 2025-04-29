@@ -1,0 +1,37 @@
+<!-- view_registrations.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrations</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Registrations List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Event Name</th>
+                <th>Special Requests</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for registration in registrations %}
+            <tr>
+                <td>{{ registration[0] }}</td>  <!-- ID -->
+                <td>{{ registration[1] }}</td>  <!-- Full Name -->
+                <td>{{ registration[2] }}</td>  <!-- Email -->
+                <td>{{ registration[3] }}</td>  <!-- Phone -->
+                <td>{{ registration[4] }}</td>  <!-- Event Name -->
+                <td>{{ registration[5] }}</td>  <!-- Special Requests -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
